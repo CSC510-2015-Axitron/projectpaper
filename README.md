@@ -69,7 +69,7 @@ The team initially had very little experience using databases in a web app envir
 
 This separation necessitated the creation of a RESTful API for communication with the database.  [Pautasso][restbook] states that, REST "in case of the HTTP protocol, a set of methods (e.g., GET, PUT, DELETE, POST, HEAD, OPTIONS, etc.) with well defined semantics in terms of the effect on the state of the resource, are defined. HTTP methods can be applied to all Web resource identifiers (e.g., URIs which conform to the HTTP scheme)."  This is the way our team used our RESTful API to communicate between the MySQL database and the application.  The API is hosted on the same dyno as the database and all communication with the outside world is handled through the API.  A diagram is shown below to describe the relationship of the app, server, database, and API.
 
-![apidiagram](https://github.com/CSC510-2015-Axitron/projectpaper/blob/master/img/apicommunication.png)
+![apidiagram](./img/apicommunication.png)
 
 ####Analytics
 
