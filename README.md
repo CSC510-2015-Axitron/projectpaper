@@ -105,7 +105,7 @@ We adopted one-page game menu design for its simplicity and compatibility across
 
 To engage the game, players may use keyboard (e.g., up, down, left, and right keys) or mouse device to move the main character. To simulate Joystick functionality, mouse button and its movement and velocity are constantly monitored. Such feature allows players to enjoy the game on mobile devices as well. The main canvas consists of two overlapped layers. The top layer is responsible for rendering main character (i.e., the knight). The bottom layer displays the maze and trail dots. To reduce CPU load, only a small portion of the maze about 10 x 8 blocks is displayed on the screen. In our implementation, the main character remains on the center of canvas while the background is redrawn for each step. To make such movement appeal to the gamers, background is rendered at a rate of 50 frame per second. At the end of each level, two events are triggered: a short triumph music is played if available followed by a short question on a jQuery UI in-screen floater. The response of players (e.g., Yes or No) may change the selection probability of the next maze.
 
-[main_menu](./img/the_game_menu.png)
+![main_menu](./img/the_game_menu.png)
 
 ####Procedural Generation
 
@@ -125,7 +125,7 @@ Because each algorithm starts with its endpoints in the corners, an extra piece 
 
 ###Testing
 
-An automatic testing platform is expected to reduce the chance of existing components being broken by the addition and revision to the code. Therefore, we made test an important part of our project and have been developing unit test methods along with the development of the code.  Due to the nature of our web-based application, headless testing platform is also required. Here, Node.js, a general-purpose server site tool, is chosen to carry out both static and dynamic analysis. Four components of our project are constantly being tested at each push to the GitHub repository. The components are listed below:
+An automatic testing platform is expected to reduce the chance of existing components being broken by the addition and revision to the code. Therefore, we made test an important part of our project and have been developing unit test methods along with the development of the code.  Due to the nature of our web-based application, headless testing platform is also required. Here, [Node.js](https://nodejs.org), a general-purpose server site tool, is chosen to carry out both static and dynamic analysis. Four components of our project are constantly being tested at each push to the GitHub repository. The components are listed below:
 
 - mazeModel.js
 - backtrack.js
@@ -136,7 +136,7 @@ The mazeMode.js component is the engine of the maze game and responsible for I/O
 
 One challenge of developing test cases for gaming is how to test UI components in the headless environment. Although Node.js provides a few browser-like APIs and tools, we found these tools to be very limited. In addition to relying on humans to perform functional tests, we have also created UI mock objects to tackle this issue. These UI mock objects were created inside the mocha test files to act as browser window, page document, jQuery library, jQuery AJAX, CanvasEngine, Buzz sound library, remoteDB, and AMaze model itself. Using these mock objects allows us to monitor status, responses, and behavior of the game via internal flags. 
 
-These dynamic tests can be carried out on local sites as well as on server site such as Travis-CI. We have utilized npm, short for Node.js Package Manager, to streamline all of our installation, testing procedure, and deployment. Defined in package.json file, the required node.js packages and tools can be installed in just one step. In addition to the aforementioned tools, Grunt, the automatic task runner, will be executed during the last step. As part of Continuous-Integration and Continuous-Deployment, once test is passed, the task runner will duplicate JavaScript files, minify them and move them into deployment folder called "Publichtml."
+These dynamic tests can be carried out on local sites as well as on server site such as Travis-CI. We have utilized [npm](https://www.npmjs.com), short for Node.js Package Manager, to streamline all of our installation, testing procedure, and deployment. Defined in package.json file, the required node.js packages and tools can be installed in just one step. In addition to the aforementioned tools, Grunt, the automatic task runner, will be executed during the last step. As part of Continuous-Integration and Continuous-Deployment, once test is passed, the task runner will duplicate JavaScript files, minify them and move them into deployment folder called "Publichtml."
 
 ###Discussion
 ####Difficult in testing GUI
