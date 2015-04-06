@@ -91,15 +91,21 @@ Finally the amount of time required to research, set up, and put into place all 
 
 ###Project Components
 
+####User Interface
+
+
+
 ####Procedural Generation
 
-####Menu
 
-####Canvas
 
 ####Registration and Authentication
 
+
+
 ####Maze Designer
+
+
 
 ###Testing
 
