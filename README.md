@@ -91,6 +91,16 @@ Finally the amount of time required to research, set up, and put into place all 
 
 ###Project Components
 
+####Procedural Generation
+
+####Menu
+
+####Canvas
+
+####Registration and Authentication
+
+####Maze Designer
+
 ###Testing
 
 An automatic testing platform is expected to reduce the chance of existing components being broken by the addition and revision to the code. Therefore, we made test an important part of our project and have been developing unit test methods along with the development of the code.  Due to the nature of our web-based application, headless testing platform is also required. Here, Node.js, a general-purpose server site tool, is chosen to carry out both static and dynamic analysis. Four components of our project are constantly being tested at each push to the GitHub repository. The components are listed below:
