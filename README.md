@@ -89,11 +89,10 @@ Another potential downside here is the possibility that all of these services in
 
 Finally the amount of time required to research, set up, and put into place all of these services is non-trivial.  One member of the team spent a large portion of his time doing the work required to set all of the services involved up.  That represents a trade-off for the team overall:  Would the project have been better off with the work of this extra team member on the project itself, or do the benefits to productivity for the team as a whole outstrip any additional effort that would have been leveraged on the project? That call is best left to the reader, rather than be made by an over-presumptuous writer.
 
+
 ###Project Components
 
 ####User Interface
-
-
 
 ####Procedural Generation
 
@@ -109,11 +108,7 @@ Because each algorithm starts with its endpoints in the corners, an extra piece 
 
 ####Registration and Authentication
 
-
-
 ####Maze Designer
-
-
 
 ###Testing
 
@@ -130,7 +125,6 @@ One challenge of developing test cases for gaming is how to test UI components i
 
 These dynamic tests can be carried out on local sites as well as on server site such as Travis-CI. We have utilized npm, short for Node.js Package Manager, to streamline all of our installation, testing procedure, and deployment. Defined in package.json file, the required node.js packages and tools can be installed in just one step. In addition to the aforementioned tools, Grunt, the automatic task runner, will be executed during the last step. As part of Continuous-Integration and Continuous-Deployment, once test is passed, the task runner will duplicate JavaScript files, minify them and move them into deployment folder called "Publichtml."
 
-
 ###Discussion
 ####Difficult in testing GUI
 A lot of our project's functionality depends on the GUI working properly, which is difficult to test. We ended up making up a series of informal functional tests that one of the development team would have to work through manually if they felt like testing, but more often our testing process was even less formal than that. While working on a feature, each developer tended to only test new features added to the GUI, expecting old features to continue to work. This bit us a few times, with some new feature breaking old functionality. A tool to automate interacting with the GUI would be useful, but we found nothing easy enough to setup to justify the effort of setting it up.
@@ -146,20 +140,22 @@ We did not have the time or resources to deploy our application to the world at 
 In addition, we did not have enough time to create enough hand-crafted content to reduce the chance of a user seeing the same maze twice, therefore we also recommend that whoever resumes work on this project also make more mazes.
 
 ###References
-[Nine Paths to Indie Game Greatness - David Marsh][indiegreatness]
-
-[Think Labyrinth: Maze Algorithms - Walter D. Pullen][mazealgs]
+[CIS 680: DATA STRUCTURES: Chapter 19: Backtracking Algorithms][cis680]
 
 [Continuous Integration - Martin Fowler][contint]
 
 [Continuous Software Engineering and Beyond: Trends and Challenges - Brian Fitzgerald & Klaas-Jan Stol][fitzstol]
 
+[Nine Paths to Indie Game Greatness - David Marsh][indiegreatness]
+
 [REST: Advanced Research Topics and Practical Applications - Cesare Pautasso, Erik Wilde, Rosa Alarcon][restbook]
+
+[Think Labyrinth: Maze Algorithms - Walter D. Pullen][mazealgs]
 
 [indiegreatness]: http://www.gamasutra.com/view/feature/131952/nine_paths_to_indie_game_greatness.php?print=1 "Nine Paths to Indie Game Greatness - David Marsh"
 [mazealgs]: http://www.astrolog.org/labyrnth/algrithm.htm#create "Think Labyrinth: Maze Algorithms - Walter D. Pullen"
-[cis680]: http://web.cse.ohio-state.edu/~gurari/course/cis680/cis680Ch19.html "CIS 680: DATA STRUCTURES: Chapter 19: Backtracking Algorithms"
 [contint]: http://www.martinfowler.com/articles/continuousIntegration.html "Continuous Integration - Martin Fowler"
 [fitzstol]: http://staff.lero.ie/stol/files/2014/03/rcose2014_fitzgerald.pdf "Continuous Software Engineering and Beyond: Trends and Challenges - Brian Fitzgerald & Klaas-Jan Stol"
 [restbook]: http://www.springer.com/us/book/9781461492986 "REST: Advanced Research Topics and Practical Applications - Cesare Pautasso, Erik Wilde, Rosa Alarcon"
+[cis680]: http://web.cse.ohio-state.edu/~gurari/course/cis680/cis680Ch19.html "CIS 680: DATA STRUCTURES: Chapter 19: Backtracking Algorithms"
 
