@@ -1,6 +1,6 @@
 ####Procedural Generation
 
-We employed six different procedural maze generation algorithms in this project, of which each has an equal chance to be chosen when a random maze is given to the user. We refer to the six algorithms as Recursive Backtracking, Coherent Recursive Backtracking, Randomized Prim's Algorithm, Randomized Kruskal's Algorithm, Random Wall Removal, and Random Wall Addition.
+We employed six different procedural maze generation algorithms in this project, each of which has an equal chance of being chosen when a random maze is given to the user. We refer to the six algorithms as Recursive Backtracking, Coherent Recursive Backtracking, Randomized Prim's Algorithm, Randomized Kruskal's Algorithm, Random Wall Removal, and Random Wall Addition.
 
 Recursive Backtracking and Coherent Recursive Backtracking both make use of backtracking, which is a technique that recursively explores a solution space and backtracks when no further options occur at a given point. These algorithms pick a start point, and pseudo-randomly choose the branching directions at each step of the way. The difference between the two is that the former uses a basic uniform pseudo-random number generator, and the latter chooses its directions according to a coherent direction field produced by a pair of instances of simplex noise: a function that generates smooth randomness over an n-dimensional space.
 

@@ -1,2 +1,0 @@
-####Registration and Authentication
-
