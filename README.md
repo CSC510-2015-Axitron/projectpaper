@@ -21,7 +21,7 @@ The first stop for most of our code is, as with many projects, [GitHub](http://w
 
 ####Travis-CI
 
-Our continuous integration process is orchestrated using a tool called [Travis CI](https://travis-ci.org "Travis CI").  Travis CI is actually a company that offers cloud based build server functionality for free.  The build server what takes care of the automated build part of Fowler's definition of continuous integration.  There are a number of advantages in going with a hosted build server:
+Our continuous integration process is orchestrated using a tool called [Travis CI](https://travis-ci.org "Travis CI").  Travis CI is a company that offers cloud based build server functionality for free.  The build server is what takes care of the automated build part of Fowler's definition of continuous integration.  There are a number of advantages in going with a hosted build server:
 
 - It's free: This is obviously one of the biggest advantages, but may not be the case in the future.
 - Setting up a build server yourself can be time consuming.
