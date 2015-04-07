@@ -123,9 +123,9 @@ Random Wall Removal and Random Wall Addition both work by starting with all wall
 
 Because each algorithm starts with its endpoints in the corners, an extra piece of functionality was added that iteratively moves the endpoints single units in the cardinal directions if there exists such a move that increases the length of the shortest path from start to finish. This decision came as a result of the fact that there were frequently more relevant points nearby those chosen in the corners.
 
-####Registration and Authentication
-
 ####Maze Designer
+
+![designer](./images/maze-designer.png)
 
 ###Testing
 
