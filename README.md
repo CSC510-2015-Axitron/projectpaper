@@ -125,7 +125,7 @@ Because each algorithm starts with its endpoints in the corners, an extra piece 
 
 ####Maze Designer
 
-![designer](./images/maze-designer.png)
+![designer](./img/maze-designer.png)
 
 ###Testing
 
